@@ -1,9 +1,9 @@
+const path = require('path');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
-
-const path = require('path');
 
 module.exports = (env, argv) => {
     const isProd = argv.mode === 'production';
@@ -51,7 +51,7 @@ module.exports = (env, argv) => {
             extensions: ['.js'],
             alias: {
                 '@': path.resolve(__dirname, 'src'),
-                '@core': path.resolve(__dirname, 'src', 'core'),
+                '@core': path.resolve(__dirname, 'src/core'),
             },
         },
         devServer: {

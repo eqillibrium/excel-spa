@@ -15,5 +15,7 @@ module.exports = {
         'indent': ['error', 4],
         'semi': 'off',
         'comma-dangle': 'off',
+        'require-jsdoc': 0,
+        'operator-linebreak': 'off'
     },
 };
